@@ -1,23 +1,34 @@
 public class Data {
-    private final int ano;
-    private final int mes;
-    private final int dia;
-    
-    public Data(int dia, int mes, int ano) {
-        this.dia = dia;
-        this.mes = mes;
-        this.ano = ano;
-    };
 
-    public int getDia() {
-        return dia;
+    private final Integer dia;
+    private final Integer mes;
+    private final Integer ano;
+  
+    public Data(Integer dia, Integer mes, Integer ano) {
+      this.dia = dia;
+      this.mes = mes;
+      this.ano = ano;
     }
-
-    public int getMes() {
-        return mes;
+  
+    public Integer getDia() {
+      return dia;
     }
-
-    public int getAno() {
-        return ano;
+  
+    public Integer getMes() {
+      return this.mes;
     }
-}
+  
+    public Integer getAno() {
+      return ano;
+    }
+  
+    public String getDataFormatada() {
+      return dia + "/" + mes + "/" + ano;
+    }
+  
+    public String toString() {
+      return getDataFormatada();
+    }
+  
+  }
+  
